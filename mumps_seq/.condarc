@@ -1,0 +1,12 @@
+channels:
+  - defaults
+  - basnijholt
+  - nlesc
+  
+#  - menpo      # metis
+#  - yungyuc    # scotch
+#  - mpi4py     # openmpi
+#  - jakirkham  # gfortran
+#  - asmeurer   # cloog
+
+show_channel_urls: True

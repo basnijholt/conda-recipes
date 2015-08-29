@@ -1,0 +1,65 @@
+package:
+  name: kwant
+  version: "1.0.4"
+
+source:
+  git_url: https://github.com/jbweston/kwant.git
+  git_tag: python3
+
+requirements:
+  build:
+    - python
+    - tinyarray
+    - numpy
+    - matplotlib
+    - mumps
+    - scipy
+    - cython
+    - nose
+    - lapack
+
+  run:
+    - python
+    - tinyarray
+    - numpy
+    - matplotlib
+    - mumps
+    - scipy
+    - cython
+    - nose
+    - lapack
+
+test:
+  # Python imports
+  imports:
+    - kwant
+    - kwant.graph
+    - kwant.graph.tests
+    - kwant.linalg
+    - kwant.linalg.tests
+    - kwant.physics
+    - kwant.physics.tests
+    - kwant.solvers
+    - kwant.solvers.tests
+    - kwant.tests
+
+  # commands:
+    # You can put test commands to be run here.  Use this to test that the
+    # entry points work.
+
+
+  # You can also put a file called run_test.py in the recipe that will be run
+  # at test time.
+
+  # requires:
+    # Put any additional test requirements here.  For example
+    # - nose
+
+about:
+  home: http://kwant-project.org/
+  license: BSD
+  summary: 'Package for numerical quantum transport calculations.'
+
+# See
+# http://docs.continuum.io/conda/build.html for
+# more information about meta.yaml
