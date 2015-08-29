@@ -1,4 +1,4 @@
-# Conda-recipes
+# Conda-recipes for my [binstar](http://binstar.org/basnijholt)
 
 In order to install [Kwant](kwant-project.org/) I made some recipes to compile it and its dependencies.
 
