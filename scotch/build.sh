@@ -1,7 +1,5 @@
 cd src/
-platform='unknown'
-unamestr=`uname`
-if [[ "$unamestr" == 'Darwin' ]]; then
+if [[ `uname` == 'Darwin' ]]; then
    cp $RECIPE_DIR/Makefile.inc.i686_mac_darwin8 Makefile.inc
 else
    cp $RECIPE_DIR/Makefile.inc.i686_pc_linux2 Makefile.inc

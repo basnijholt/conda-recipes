@@ -15,5 +15,6 @@ RUN conda install -y conda-build
 RUN conda config --add channels http://conda.anaconda.org/basnijholt
 RUN conda config --add channels http://conda.anaconda.org/nlesc
 RUN apt-get install -y build-essential
+RUN apt-get install zlib1g-dev
 
 VOLUME ["/home/shared"]
