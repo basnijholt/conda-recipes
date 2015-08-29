@@ -13,11 +13,15 @@ build:
 requirements:
   build:
     - gcc [osx]
+    - gcc ==4.9.2 [linux] 
+    - libgfortran
     - metis
     - scotch
 
   run:
     - gcc [osx]
+    - gcc ==4.9.2 [linux]
+    - libgfortran
     - metis
     - scotch
 

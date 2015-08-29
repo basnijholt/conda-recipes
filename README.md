@@ -3,7 +3,7 @@
 In order to install [Kwant](kwant-project.org/) I made some recipes to compile it and its dependencies.
 
 My recipes
-  - [MUMPS](mumps.enseeiht.fr) (non-python)
+  - [MUMPS](mumps.enseeiht.fr) Sequential version, with SCOTCH and Metis (non-python)
   - [SCOTCH](https://www.labri.fr/perso/pelegrin/scotch/) (non-python)
   - Tinyarray
   - Kwant
@@ -22,11 +22,11 @@ docker run -v /path/to/conda-recipes/:/conda-recipes/ -it build
 After you enter your new Docker image:
 ```sh
 conda build /conda-recipes/scotch/
-conda install scotch --use-local
-conda build /conda-recipes/mumps/
-conda install mumps --use-local
+conda install -y scotch --use-local
+conda build /conda-recipes/mumps_seq/
+conda install -y mumps --use-local
 conda build /conda-recipes/tinyarray/
-conda install tinyarray --use-local
+conda install -y tinyarray --use-local
 conda build /conda-recipes/kwant/
-conda install kwant --use-local
+conda install -y kwant --use-local
 ```
