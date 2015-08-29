@@ -1,5 +1,7 @@
 # Conda-recipes for my [binstar](http://binstar.org/basnijholt)
 
+**Note, the OS X packages are working AFAIK, the Python 2 packages for Linux on my binstar channel work in some cases, Python 3 not.**
+
 In order to install [Kwant](kwant-project.org/) I made some recipes to compile it and its dependencies.
 
 My recipes
