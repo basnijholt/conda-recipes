@@ -1,30 +1,16 @@
-about: {home: 'http://gforge.inria.fr/frs/download.php/file/34618/', license: CeCILL-C}
-build:
-  entry_points: []
-  features: []
-  number: 1
-  string: ''
-  track_features: []
-package: {name: scotch, version: 6.0.4}
+package:
+  name: scotch
+  version: 6.0.0
+
 requirements:
-  build:
-    - gcc ==4.9.2 [linux]
-    - gcc
-  conflicts: []
-  run:
-    - gcc ==4.9.2 [linux]
-    - gcc
+ build:
+  - gcc
+ run:
+  - gcc
+
 source:
-  fn: scotch_6.0.4.tar.gz
-  git_branch: ''
-  git_tag: ''
-  md5: d58b825eb95e1db77efe8c6ff42d329f
-  patches: []
+  fn: scotch_6.0.0_esmumps.tar.gz
+  md5: c50d6187462ba801f9a82133ee666e8e
+  url: http://gforge.inria.fr/frs/download.php/file/31832/scotch_6.0.0_esmumps.tar.gz
+  patches:
     - clock_gettime.patch [osx]
-  svn_rev: ''
-  url: http://gforge.inria.fr/frs/download.php/file/34618/scotch_6.0.4.tar.gz
-test:
-  commands: []
-  files: []
-  imports: []
-  requires: []

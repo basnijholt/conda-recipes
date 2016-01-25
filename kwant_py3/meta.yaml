@@ -1,33 +1,27 @@
 package:
   name: kwant
-  version: "1.0.4"
+  version: "1.2.2"
 
 source:
-  git_url: https://github.com/jbweston/kwant.git
-  git_tag: python3
+  git_url: https://github.com/kwant-project/kwant.git
+  git_tag: v1.2.2
 
 requirements:
   build:
     - python
-    - tinyarray
     - numpy
     - matplotlib
-    - mumps
     - scipy
     - cython
     - nose
-    - lapack
 
   run:
     - python
-    - tinyarray
     - numpy
     - matplotlib
-    - mumps
     - scipy
     - cython
     - nose
-    - lapack
 
 test:
   # Python imports
