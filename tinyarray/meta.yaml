@@ -1,11 +1,11 @@
 package:
   name: tinyarray
-  version: "1.0.5"
+  version: "1.1.0"
 
 source:
-  fn: tinyarray-1.0.5.tar.gz
-  url: https://pypi.python.org/packages/source/t/tinyarray/tinyarray-1.0.5.tar.gz
-  md5: 0ef161e8b5ae711fe3e1babb8702105e
+  fn: tinyarray-1.1.0.tar.gz
+  url: https://pypi.python.org/packages/source/t/tinyarray/tinyarray-1.1.0.tar.gz
+  md5: 3079f1dc3648f9060518765362360d7e
 #  patches:
    # List any patch files here
    # - fix.patch
@@ -29,9 +29,12 @@ source:
 requirements:
   build:
     - python
+    - setuptools
+    - nose
 
   run:
     - python
+    - nose
 
 # test:
   # Python imports

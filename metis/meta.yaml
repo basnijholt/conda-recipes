@@ -1,25 +1,23 @@
+about:
+  home: http://glaros.dtc.umn.edu/gkhome/metis/metis
+  license: GPLv3
+
+package:
+  name: metis
+  version: 5.1.0
+
+source:
+  fn: metis-5.1.0.tar.gz
+  url: http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/metis-5.1.0.tar.gz
+
 build:
-  entry_points: []
-  features: []
-  number: 1
-  string: ''
-  track_features: []
-package: {name: scotch, version: 6.0.4}
+  number: 0
+  binary_relocation: true
+
 requirements:
   build:
     - gcc
-  conflicts: []
+    - cmake
   run:
     - gcc
-source:
-  fn: metis-4.0.3.tar.gz
-  git_branch: ''
-  git_tag: ''
-  patches: []
-  svn_rev: ''
-  url: http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/OLD/metis-4.0.3.tar.gz
-test:
-  commands: []
-  files: []
-  imports: []
-  requires: []
+    - cmake

@@ -6,24 +6,16 @@ source:
   fn: MUMPS_5.0.1.tar.gz
   url: http://mumps.enseeiht.fr/MUMPS_5.0.1.tar.gz
 
-build:
-  number: 5
-  binary_relocation: true
-
 requirements:
   build:
-    - gcc [osx]
-    - gcc #==4.8.5 [linux]
-    - libgfortran
+    - gcc
     - metis
-    - scotch
+    - scotch5
 
   run:
-    - gcc [osx]
-    - gcc #==4.8.5 [linux]
-    - libgfortran
+    - gcc
     - metis
-    - scotch
+    - scotch5
 
 about:
   home: http://mumps.enseeiht.fr/

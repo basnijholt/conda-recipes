@@ -9,19 +9,31 @@ source:
 requirements:
   build:
     - python
+    - gcc
+    - openblas
+    - lapack
+    - metis
+    - scotch5
+    - mumps
     - numpy
     - matplotlib
     - scipy
     - cython
     - nose
+    - tinyarray
 
   run:
     - python
+    - gcc
+    - metis
+    - scotch5
+    - mumps
     - numpy
     - matplotlib
     - scipy
     - cython
     - nose
+    - tinyarray
 
 test:
   # Python imports
@@ -37,23 +49,8 @@ test:
     - kwant.solvers.tests
     - kwant.tests
 
-  # commands:
-    # You can put test commands to be run here.  Use this to test that the
-    # entry points work.
-
-
-  # You can also put a file called run_test.py in the recipe that will be run
-  # at test time.
-
-  # requires:
-    # Put any additional test requirements here.  For example
-    # - nose
 
 about:
   home: http://kwant-project.org/
   license: BSD
   summary: 'Package for numerical quantum transport calculations.'
-
-# See
-# http://docs.continuum.io/conda/build.html for
-# more information about meta.yaml

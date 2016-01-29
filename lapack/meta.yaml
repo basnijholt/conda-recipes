@@ -1,0 +1,26 @@
+about: {home: 'http://www.netlib.org/lapack/', license: BSD, summary: Linear Algebra
+    PACKage}
+build:
+  entry_points: []
+  features: []
+  number: 2
+  string: ''
+  track_features: []
+package: {name: lapack, version: 3.5.0}
+requirements:
+  build: []
+  conflicts: []
+  run: []
+source:
+  fn: lapack-3.5.0.tgz
+  git_branch: ''
+  git_tag: ''
+  md5: b1d3e3e425b2e44a06760ff173104bdf
+  patches: []
+  svn_rev: ''
+  url: http://www.netlib.org/lapack/lapack-3.5.0.tgz
+test:
+  commands: []
+  files: []
+  imports: []
+  requires: []
