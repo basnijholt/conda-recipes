@@ -11,13 +11,11 @@ source:
   url: http://glaros.dtc.umn.edu/gkhome/fetch/sw/metis/metis-5.1.0.tar.gz
 
 build:
-  number: 0
+  number: 1
   binary_relocation: true
 
 requirements:
   build:
-    - gcc
     - cmake
   run:
-    - gcc
-    - cmake
+    - libgcc

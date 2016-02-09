@@ -14,7 +14,7 @@ requirements:
     - lapack
     - metis
     - scotch5
-    - mumps
+    - mumps_seq
     - numpy
     - matplotlib
     - scipy
@@ -24,16 +24,16 @@ requirements:
 
   run:
     - python
-    - gcc
     - metis
     - scotch5
-    - mumps
+    - mumps_seq
     - numpy
     - matplotlib
     - scipy
     - cython
     - nose
     - tinyarray
+    - gcc
 
 test:
   # Python imports

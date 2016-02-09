@@ -1,5 +1,5 @@
 package:
-  name: mumps_seq
+  name: mumps
   version: 5.0.1
 
 source:
@@ -7,19 +7,17 @@ source:
   url: http://mumps.enseeiht.fr/MUMPS_5.0.1.tar.gz
 
 build:
-  number: 10
-  binary_relocation: true
+  number: 1
 
 requirements:
   build:
-    - gcc
     - metis
-    - scotch5
+    - scotch
 
   run:
     - libgcc
     - metis
-    - scotch5
+    - scotch
 
 about:
   home: http://mumps.enseeiht.fr/

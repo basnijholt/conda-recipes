@@ -17,7 +17,7 @@ make | tee make.log 2>&1
 
 # Install.
 cd ..
-mkdir $PREFIX/lib -p
+mkdir -p $PREFIX/lib
 cp librefblas.a $PREFIX/lib/libblas.a
 cp liblapack.a $PREFIX/lib/liblapack.a
 
