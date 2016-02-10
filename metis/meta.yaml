@@ -17,5 +17,6 @@ build:
 requirements:
   build:
     - cmake
+    - gcc
   run:
     - libgcc

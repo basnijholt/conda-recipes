@@ -6,6 +6,10 @@ source:
   git_url: https://github.com/kwant-project/kwant.git
   git_tag: v1.2.2
 
+build:
+  number: 1
+  binary_relocation: true
+
 requirements:
   build:
     - python

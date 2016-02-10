@@ -13,5 +13,6 @@ source:
   url: http://www.netlib.org/lapack/lapack-3.5.0.tgz
 requirements:
   build:
+    - gcc
   run:
     - libgcc
