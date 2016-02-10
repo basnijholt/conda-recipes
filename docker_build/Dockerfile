@@ -7,16 +7,11 @@ RUN apt-get install -y wget
 RUN apt-get install -y build-essential
 RUN apt-get install -y zlib1g-dev
 RUN apt-get install -y gfortran
-RUN wget https://repo.continuum.io/miniconda/Miniconda-latest-Linux-x86_64.sh
-RUN wget --quiet https://repo.continuum.io/miniconda/Miniconda-3.10.1-Linux-x86_64.sh
-RUN /bin/bash /Miniconda-3.10.1-Linux-x86_64.sh -b
-RUN rm Miniconda-3.10.1-Linux-x86_64.sh
-RUN echo 'export PATH=/root/miniconda/bin:$PATH' > /root/.bashrc
-ENV PATH /root/miniconda/bin:$PATH
-RUN conda install -y anaconda-client
-RUN conda install -y conda-build
+RUN wget wget https://3230d63b5fc54e62148e-c95ac804525aac4b6dba79b00b39d1d3.ssl.cf1.rackcdn.com/Anaconda3-2.5.0-Linux-x86_64.sh
+RUN /bin/bash Anaconda3-2.5.0-Linux-x86_64.sh
+RUN echo 'export PATH="/root/anaconda3/bin:$PATH"' > /root/.bashrc
+ENV PATH /root/anaconda3/bin:$PATH
 RUN conda config --add channels http://conda.anaconda.org/basnijholt
-RUN conda config --add channels http://conda.anaconda.org/nlesc
 
 
 VOLUME ["/home/shared"]
