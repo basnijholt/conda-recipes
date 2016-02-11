@@ -25,6 +25,7 @@ requirements:
     - cython
     - nose
     - tinyarray
+    - git
 
   run:
     - python
@@ -38,6 +39,7 @@ requirements:
     - nose
     - tinyarray
     - gcc
+    - git
 
 test:
   # Python imports

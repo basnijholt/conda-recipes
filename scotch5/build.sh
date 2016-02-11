@@ -12,9 +12,12 @@ if [ `uname` == "Darwin" ]; then
     sed -e "s/= -O3/= -fPIC -O3/" >> \
     Makefile.inc
 else
-  cat Make.inc/Makefile.inc.x86-64_pc_linux2 | \
-    sed -e "s/= -O3/= -fPIC -O3/" >> \
-    Makefile.inc
+  # cp $RECIPE_DIR/Makefile.inc.i686_pc_linux2_clean Makefile.inc
+  cp Make.inc/Makefile.inc.x86-64_pc_linux2 Makefile.inc
+  sed -i "s@CLIBFLAGS\t=@CLIBFLAGS\t= -fPIC@g" Makefile.inc
+  sed -i 's#-l$(SCOTCHLIB)errexit#-l$(SCOTCHLIB)errexit -lm#g' esmumps/Makefile
+  sed -i "s#-lz -lm -lrt#-lz -lm -lrt -lpthread#g" Makefile.inc
+
 fi
 make | tee make.log 2>&1
 cd ..

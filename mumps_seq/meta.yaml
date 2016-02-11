@@ -7,7 +7,7 @@ source:
   url: http://mumps.enseeiht.fr/MUMPS_5.0.1.tar.gz
 
 build:
-  number: 11
+  number: 12
   binary_relocation: true
 
 requirements:
@@ -15,11 +15,13 @@ requirements:
     - gcc
     - metis
     - scotch5
+    - openblas
 
   run:
     - libgcc
     - metis
     - scotch5
+    - openblas
 
 about:
   home: http://mumps.enseeiht.fr/
