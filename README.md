@@ -1,7 +1,5 @@
 # Conda-recipes for my [binstar](http://binstar.org/basnijholt)
 
-**Note, the OS X packages are working AFAIK, the Python 2 packages for Linux on my binstar channel work in some cases, Python 3 not.**
-
 In order to install [Kwant](kwant-project.org/) I made some recipes to compile it and its dependencies.
 
 My recipes
@@ -9,6 +7,13 @@ My recipes
   - [SCOTCH](https://www.labri.fr/perso/pelegrin/scotch/) (non-python)
   - Tinyarray
   - Kwant
+  - lapack
+
+
+For Mac OS X you need to have X-Code installed, do with `xcode-select --install`
+
+For some older OSs you might need to install `conda instal gcc`, if that doesn't install you might need `sudo apt-get install libc-dev`
+
 
 To make the build as reproducible as possible I created a Docker image (also in this repo) where I build the linux-64 packages.
 
@@ -23,8 +28,12 @@ docker run -v /path/to/conda-recipes/:/conda-recipes/ -it build
 ```
 After you enter your new Docker image:
 ```sh
-conda build /conda-recipes/scotch/
-conda install -y scotch --use-local
+conda build /conda-recipes/scotch5/
+conda install -y scotch5 --use-local
+conda build /conda-recipes/metis/
+conda install -y metis --use-local
+conda build /conda-recipes/lapack/
+conda install -y lapack --use-local
 conda build /conda-recipes/mumps_seq/
 conda install -y mumps --use-local
 conda build /conda-recipes/tinyarray/
