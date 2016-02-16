@@ -1,0 +1,2 @@
+conda config --set anaconda_upload yes
+conda build metis; conda build scotch5; conda build lapack; conda install metis --use-local --force --y; conda install scotch5 --use-local --force --y; conda install lapack --use-local --force --y; conda build tinyarray; conda build mumps_seq; conda install tinyarray --use-local --force --y; conda install mumps_seq --use-local --force --y; conda build kwant; conda install kwant --use-local --force --y
