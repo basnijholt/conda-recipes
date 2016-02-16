@@ -2,7 +2,7 @@
 # installed to use for scotch, so not sure if needed for mumps too.
 
 if [ `uname` == "Darwin" ]; then
-  cp $RECIPE_DIR/Makefile.debian.SEQ Makefile.inc
+  cp $RECIPE_DIR/Makefile.debian.SEQ_mac Makefile.inc
 else
   cp $RECIPE_DIR/Makefile.debian.SEQ Makefile.inc
   sed -i "s@^CC =.*@CC = gcc -fPIC@g" Makefile.inc

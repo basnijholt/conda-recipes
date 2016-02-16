@@ -22,3 +22,6 @@ about:
   home: http://git.kwant-project.org/tinyarray/about/
   license: BSD License
   summary: 'Arrays of numbers for Python, optimized for small sizes'
+
+build:
+  number: 5

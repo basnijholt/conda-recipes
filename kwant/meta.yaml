@@ -7,7 +7,7 @@ source:
   git_tag: v1.2.2
 
 build:
-  number: 5
+  number: 7
   binary_relocation: true
 
 requirements:
@@ -39,7 +39,7 @@ requirements:
     - nose
     - tinyarray
     - libgcc
-    - libgfortran
+    - libgfortran [linux]
 
 
 test:
