@@ -1,6 +1,8 @@
 #!/bin/sh
 # see http://conda.pydata.org/docs/build.html for hacking instructions.
 
+# Required apt-get install zlib1g-dev libc-dev on bare linux
+
 cd src/
 echo 'prefix = $PREFIX' > Makefile.inc
 echo '' >> Makefile.inc

@@ -1,4 +1,8 @@
 #!/bin/bash
+
+# Required 'apt-get install zlib1g-dev libc-dev' on bare linux, but zlibg1 was
+# installed to use for scotch, so not sure if needed for Metis too.
+
 make config
 make
 # install.

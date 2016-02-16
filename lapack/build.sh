@@ -1,7 +1,8 @@
 #!/bin/sh
 # see http://conda.pydata.org/docs/build.html for hacking instructions.
-
+# Required 'apt-get install libc-dev' on bare linux
 # Patch.
+
 sed -e "s/OPTS     \= -O2/OPTS     \=\ -O2\ -fPIC/g" \
 	INSTALL/make.inc.gfortran | \
 	sed -e "s/NOOPT    \= -O0/NOOPT    \= -O0 -fPIC/g" > \

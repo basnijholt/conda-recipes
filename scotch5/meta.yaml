@@ -9,7 +9,7 @@ requirements:
   - libgcc
 
 build:
-  number: 2
+  number: 3
 
 source:
   fn: scotch_5.1.12b_esmumps.tar.gz
