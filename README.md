@@ -30,8 +30,8 @@ docker run -v /path/to/conda-recipes/:/conda-recipes/ -it build
 ```
 After you enter your new Docker image:
 ```sh
-conda build /conda-recipes/scotch5/
-conda install -y scotch5 --use-local
+conda build /conda-recipes/scotch/
+conda install -y scotch --use-local
 conda build /conda-recipes/metis/
 conda install -y metis --use-local
 conda build /conda-recipes/lapack/

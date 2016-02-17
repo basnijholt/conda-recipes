@@ -19,7 +19,7 @@ requirements:
     - openblas
     - lapack
     - metis
-    - scotch5
+    - scotch
     - mumps_seq
     - numpy
     - matplotlib
@@ -31,7 +31,7 @@ requirements:
   run:
     - python
     - metis
-    - scotch5
+    - scotch
     - lapack
     - mumps_seq
     - numpy
