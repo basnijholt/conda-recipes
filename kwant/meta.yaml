@@ -16,8 +16,7 @@ requirements:
   build:
     - python
     - gcc
-    - openblas
-    - lapack
+    - openblas [linux]
     - metis
     - scotch
     - mumps_seq
@@ -32,7 +31,7 @@ requirements:
     - python
     - metis
     - scotch
-    - lapack
+    - openblas [linux]
     - mumps_seq
     - numpy
     - matplotlib

@@ -16,6 +16,7 @@ if [ `uname` == "Darwin" ]; then
 else
   # cp $RECIPE_DIR/Makefile.inc.i686_pc_linux2_clean Makefile.inc
   cp Make.inc/Makefile.inc.x86-64_pc_linux2 Makefile.inc
+  sed -i "s@CFLAGS\t\t=@CFLAGS\t= -I${PREFIX}/include@" Makefile.inc
   sed -i "s@CLIBFLAGS\t=@CLIBFLAGS\t= -fPIC@g" Makefile.inc
   sed -i 's#-l$(SCOTCHLIB)errexit#-l$(SCOTCHLIB)errexit -lm#g' esmumps/Makefile
 fi
