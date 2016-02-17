@@ -9,7 +9,7 @@ requirements:
   - libgcc
 
 build:
-  number: 2
+  number: 1
 
 source:
   fn: scotch_6.0.4.tar.gz
