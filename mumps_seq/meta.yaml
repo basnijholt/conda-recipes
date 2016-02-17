@@ -14,13 +14,13 @@ requirements:
   build:
     - gcc
     - metis
-    - scotch5
+    - scotch
     - openblas
 
   run:
     - libgcc
     - metis
-    - scotch5
+    - scotch
     - openblas
 
 about:
