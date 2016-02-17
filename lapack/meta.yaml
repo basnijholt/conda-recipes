@@ -3,7 +3,7 @@ about:
   license: BSD
   summary: Linear Algebra PACKage
 build:
-  number: 3
+  number: 2
 package:
   name: lapack
   version: "3.5.0"
