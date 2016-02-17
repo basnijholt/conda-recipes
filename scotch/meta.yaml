@@ -5,7 +5,9 @@ package:
 requirements:
  build:
   - gcc
+  - zlib
  run:
+  - zlib
   - libgcc
 
 build:
