@@ -7,14 +7,10 @@ cd src/
 echo 'prefix = $PREFIX' > Makefile.inc
 echo '' >> Makefile.inc
 if [ `uname` == "Darwin" ]; then
-  cat Make.inc/Makefile.inc.x86-64_pc_linux2 | \
-    sed -e "s/-lz -lm -lrt/-lz -lm/" | \
-    sed -e "s/-DSCOTCH_PTHREAD//" | \
-    sed -e "s/-DCOMMON_PTHREAD//" | \
-    sed -e "s/= -O3/= -fPIC -O3/" >> \
-    Makefile.inc
+    cp Make.inc/Makefile.inc.i686_mac_darwin10 Makefile.inc
+    sed -i '' 's/-DSCOTCH_PTHREAD//g' Makefile.inc
+    sed -i '' 's/-O3/-O3 -fPIC/g' Makefile.inc
 else
-  # cp $RECIPE_DIR/Makefile.inc.i686_pc_linux2_clean Makefile.inc
   cp Make.inc/Makefile.inc.x86-64_pc_linux2 Makefile.inc
   sed -i "s@CFLAGS\t\t=@CFLAGS\t= -I${PREFIX}/include@" Makefile.inc
   sed -i "s@CLIBFLAGS\t=@CLIBFLAGS\t= -fPIC@g" Makefile.inc
