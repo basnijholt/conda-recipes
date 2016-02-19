@@ -14,7 +14,6 @@ For Mac OS X you need to have X-Code installed, do with `xcode-select --install`
 
 For Linux it should work out of the box.
 
-For some older Linux OSs you might need to install `conda instal gcc`, if that doesn't install you might need `sudo apt-get install libc-dev`
 
 
 To make the build as reproducible as possible I created a Docker image (also in this repo) where I build the linux-64 packages.
