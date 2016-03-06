@@ -1,0 +1,32 @@
+package:
+  name: numpy
+  version: 1.10.4
+
+source:
+  fn: numpy-1.10.4.tar.gz
+  url: https://pypi.python.org/packages/source/n/numpy/numpy-1.10.4.tar.gz
+  md5: aed294de0aa1ac7bd3f9745f4f1968ad
+
+requirements:
+  build:
+    - python
+    - mkl_seq
+  run:
+    - python
+    - mkl_seq
+
+build:
+  string: py{{py}}_mkl_seq
+  features:
+    - mkl_seq
+
+test:
+  requires:
+    - nose
+  imports:
+    - numpy
+    - numpy.linalg.lapack_lite
+
+about:
+  home: http://numpy.scipy.org/
+  license: BSD
