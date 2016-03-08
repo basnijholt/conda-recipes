@@ -33,8 +33,6 @@ conda build /conda-recipes/scotch/
 conda install -y scotch --use-local
 conda build /conda-recipes/metis/
 conda install -y metis --use-local
-conda build /conda-recipes/lapack/
-conda install -y lapack --use-local
 conda build /conda-recipes/mumps_seq/
 conda install -y mumps --use-local
 conda build /conda-recipes/tinyarray/
