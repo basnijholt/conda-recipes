@@ -1,0 +1,37 @@
+package:
+  name: scipy
+  version: 0.17.0
+
+source:
+  url: https://pypi.python.org/packages/source/s/scipy/scipy-0.17.0.tar.gz
+  fn: scipy-0.17.0.tar.gz
+  md5: 5ff2971e1ce90e762c59d2cd84837224
+
+requirements:
+  build:
+    - gcc
+    - python
+    - cython
+    - mkl_seq
+    - numpy
+
+  run:
+    - gcc
+    - python
+    - mkl_seq
+    - numpy
+
+build:
+  string: py{{py}}_mkl_seq
+  features:
+    - mkl_seq
+
+test:
+  requires:
+    - nose
+  imports:
+    - scipy
+
+about:
+  home: https://www.scipy.org
+  license: BSD

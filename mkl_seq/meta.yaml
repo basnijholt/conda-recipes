@@ -1,0 +1,20 @@
+package:
+  name: mkl_seq
+  version: 11.3_1
+
+build:
+  number: 1
+  binary_relocation: true
+  script_env:
+    - MKLROOT
+  track_features:
+    - mkl_seq
+
+requirements:
+  build:
+    - gcc
+  run:
+    - libgcc
+
+about:
+  license: Commercial

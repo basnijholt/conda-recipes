@@ -1,0 +1,66 @@
+package:
+  name: kwant
+  version: "1.2.2" [py3k]
+  version: "1.1.2" [py27]
+
+source:
+  git_url: https://github.com/kwant-project/kwant.git
+  git_tag: v1.2.2 [py3k]
+  git_tag: v1.1.2 [py27]
+
+build:
+  number: 1
+  binary_relocation: true
+  string: py{{py}}_mkl_seq
+  features:
+    - mkl_seq
+
+requirements:
+  build:
+    - python
+    - gcc
+    - mkl_seq
+    - metis
+    - scotch
+    - mumps_seq
+    - numpy
+    - matplotlib
+    - scipy
+    - cython
+    - nose
+    - tinyarray
+
+  run:
+    - python
+    - metis
+    - scotch
+    - mkl_seq
+    - mumps_seq
+    - numpy
+    - matplotlib
+    - scipy
+    - cython
+    - nose
+    - tinyarray
+    - libgcc
+    - libgfortran [linux]
+
+test:
+  # Python imports
+  imports:
+    - kwant
+    - kwant.graph
+    - kwant.graph.tests
+    - kwant.linalg
+    - kwant.linalg.tests
+    - kwant.physics
+    - kwant.physics.tests
+    - kwant.solvers
+    - kwant.solvers.tests
+    - kwant.tests
+
+
+about:
+  home: http://kwant-project.org/
+  license: BSD
+  summary: 'Package for numerical quantum transport calculations.'
