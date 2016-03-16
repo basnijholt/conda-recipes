@@ -6,6 +6,9 @@ source:
   git_rev: v0.2
   git_url: git@gitlab.kwant-project.org:r-j-skolasinski/discretizer.git
 
+build:
+  number: 2
+
 requirements:
   build:
     - python

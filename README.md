@@ -25,7 +25,7 @@ You need to have Docker installed:
 
 ```sh
 docker build --tag="build" conda-recipes/docker_build/
-docker run -v /path/to/conda-recipes/:/conda-recipes/ -it build
+docker run -v ${PWD}:/conda-recipes/ -it build
 ```
 After you enter your new Docker image:
 ```sh
@@ -34,7 +34,7 @@ conda install -y scotch --use-local
 conda build /conda-recipes/metis/
 conda install -y metis --use-local
 conda build /conda-recipes/mumps_seq/
-conda install -y mumps --use-local
+conda install -y mumps_seq --use-local
 conda build /conda-recipes/tinyarray/
 conda install -y tinyarray --use-local
 conda build /conda-recipes/kwant/

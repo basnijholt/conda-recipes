@@ -24,4 +24,4 @@ about:
   summary: 'Arrays of numbers for Python, optimized for small sizes'
 
 build:
-  number: 2
+  number: 3
