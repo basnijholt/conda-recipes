@@ -5,10 +5,9 @@ In order to install [Kwant](kwant-project.org/) I made some recipes to compile i
 My recipes
   - [MUMPS](mumps.enseeiht.fr) Sequential version, with SCOTCH and Metis (non-python)
   - [SCOTCH](https://www.labri.fr/perso/pelegrin/scotch/) (non-python)
+  - Metis (non-python)
   - Tinyarray
   - Kwant
-  - lapack
-
 
 For Mac OS X you need to have X-Code installed, do with `xcode-select --install`
 
@@ -25,7 +24,7 @@ You need to have Docker installed:
 
 ```sh
 docker build --tag="build" conda-recipes/docker_build/
-docker run -v ${PWD}:/conda-recipes/ -it build
+docker run -v ${PWD}/conda-recipes/:/conda-recipes/ -it build
 ```
 After you enter your new Docker image:
 ```sh
@@ -39,4 +38,6 @@ conda build /conda-recipes/tinyarray/
 conda install -y tinyarray --use-local
 conda build /conda-recipes/kwant/
 conda install -y kwant --use-local
+conda build /conda-recipes/discretizer/
+conda install -y discretizer --use-local
 ```

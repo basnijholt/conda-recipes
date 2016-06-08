@@ -1,13 +1,13 @@
 package:
   name: discretizer
-  version: "0.2"
+  version: "0.3.1"
 
 source:
-  git_rev: v0.2
+  git_rev: v0.3.1
   git_url: git@gitlab.kwant-project.org:r-j-skolasinski/discretizer.git
 
 build:
-  number: 2
+  number: 0
 
 requirements:
   build:
