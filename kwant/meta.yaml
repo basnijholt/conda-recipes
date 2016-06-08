@@ -9,7 +9,7 @@ source:
   git_tag: v1.1.2 [py27]
 
 build:
-  number: 4
+  number: 5
   binary_relocation: true
 
 requirements:
@@ -41,7 +41,6 @@ requirements:
     - tinyarray
     - libgcc
     - libgfortran [linux]
-    - gcc [linux]
 
 test:
   # Python imports
