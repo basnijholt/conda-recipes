@@ -1,5 +1,10 @@
 # Conda-recipes for my [binstar](http://binstar.org/basnijholt)
 
+Install `kwant` with:
+```
+conda install -c basnijholt kwant=1.2.2
+```
+
 In order to install [Kwant](kwant-project.org/) I made some recipes to compile it and its dependencies.
 
 My recipes
