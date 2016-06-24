@@ -5,9 +5,9 @@ In order to install [Kwant](kwant-project.org/) I made some recipes to compile i
 My recipes
   - [MUMPS](mumps.enseeiht.fr) Sequential version, with SCOTCH and Metis (non-python)
   - [SCOTCH](https://www.labri.fr/perso/pelegrin/scotch/) (non-python)
-  - Metis (non-python)
-  - Tinyarray
-  - Kwant
+  - [Metis](http://glaros.dtc.umn.edu/gkhome/metis/metis/overview) (non-python)
+  - [Tinyarray](kwant-project.org/)
+  - [Kwant](kwant-project.org/)
 
 For Mac OS X you need to have X-Code installed, do with `xcode-select --install`
 
