@@ -1,10 +1,10 @@
 package:
   name: wraparound
-  version: "1.0"
+  version: "1.0.0"
 
 source:
-  git_rev: v1.0
-  git_url: ssh://git@gitlab.kwant-project.org:443/basnijholt/wraparound.git
+  git_rev: v1.0.0
+  git_url: ssh://git@gitlab.kwant-project.org:443/cwg/wraparound.git
 
 build:
   number: 0
