@@ -1,0 +1,32 @@
+package:
+  name: hpc05
+  version: "1.0"
+
+source:
+  git_rev: v1.0
+  git_url: https://github.com/basnijholt/hpc05.git
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - ipyparallel
+    - pyzmq
+    - pexpect
+  run:
+    - python
+    - ipyparallel
+    - pyzmq
+    - pexpect
+
+test:
+  imports:
+    - hpc05
+
+about:
+  home: https://github.com/basnijholt/hpc05
+  license: BSD
+
+

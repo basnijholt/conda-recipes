@@ -1,0 +1,29 @@
+package:
+  name: wraparound
+  version: "1.0"
+
+source:
+  git_rev: v1.0
+  git_url: ssh://git@gitlab.kwant-project.org:443/basnijholt/wraparound.git
+
+build:
+  number: 0
+
+requirements:
+  build:
+    - python
+    - kwant
+    - numpy
+  run:
+    - python
+    - numpy
+    - kwant
+    - tinyarray
+
+test:
+  imports:
+    - wraparound
+
+about:
+  home: https://gitlab.kwant-project.org/cwg/wraparound
+  license: BSD
