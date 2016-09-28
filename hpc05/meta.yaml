@@ -7,7 +7,8 @@ source:
   git_url: https://github.com/basnijholt/hpc05.git
 
 build:
-  number: 1
+  number: 0
+  script: python setup.py install --single-version-externally-managed --record record.txt
 
 requirements:
   build:
@@ -18,6 +19,7 @@ requirements:
     - pyzmq
     - tornado
     - pexpect
+    - ipython
   run:
     - python
     - paramiko
@@ -26,6 +28,7 @@ requirements:
     - pyzmq
     - tornado
     - pexpect
+    - ipython
 
 test:
   imports:
