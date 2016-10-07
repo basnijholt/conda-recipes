@@ -1,9 +1,9 @@
 package:
   name: hpc05
-  version: "1.6"
+  version: "1.8"
 
 source:
-  git_rev: v1.6
+  git_rev: v1.8
   git_url: https://github.com/basnijholt/hpc05.git
 
 build:
