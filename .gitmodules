@@ -1,0 +1,6 @@
+[submodule "sshtunnel"]
+	path = sshtunnel
+	url = git@github.com:conda-forge/sshtunnel-feedstock.git
+[submodule "metis"]
+	path = metis
+	url = git@github.com:conda-forge/metis-feedstock.git
