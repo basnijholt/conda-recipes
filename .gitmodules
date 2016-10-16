@@ -7,3 +7,6 @@
 [submodule "hpc05"]
 	path = hpc05
 	url = git@github.com:conda-forge/hpc05-feedstock.git
+[submodule "scotch"]
+	path = scotch
+	url = git@github.com:conda-forge/scotch-feedstock.git
