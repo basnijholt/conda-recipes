@@ -10,3 +10,6 @@
 [submodule "scotch"]
 	path = scotch
 	url = git@github.com:conda-forge/scotch-feedstock.git
+[submodule "mumps"]
+	path = mumps
+	url = git@github.com:conda-forge/mumps-feedstock.git
